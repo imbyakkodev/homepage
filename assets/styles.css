@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+.rainbow {
+  margin: 0;
+  background: linear-gradient(to right, magenta, yellow, cyan, magenta) 0% center/200%;
+  animation: rainbow 2s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+}
+@keyframes rainbow {
+  100% { background-position-x: 200%; }
+}
